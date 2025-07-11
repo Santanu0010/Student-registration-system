@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading">Student Registration System</h1>
+        <p class="descrption">Enter your details carefully please </p>
+    </header>
+<div class="container">
+
+    <!--registration form setup  -->
+    <form  class="registration-form">
+        <div class="form-group">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" class="input" placeholder="Enter name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="studentId">Student Id</label>
+            <input type="number" id="studentId" class="input" placeholder="Enter your Id" required>
+        </div>
+
+        <div class="form-group">
+            <label for="emailId">Email Id</label>
+            <input type="email" id="emailId" class="input" placeholder="Enter email id " required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactNo">Contact No</label>
+            <input type="number" id="contactNo" class="input" placeholder="Enter your no" required>
+        </div>
+
+        <button class="btn">Add </button>
+
+    </form>
+
+    <!--registration details basic creation  -->
+    <section class="registration-details">
+        <h2 class="registered"> Registered Students</h2>
+
+        <table class="student-column">
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Action</th>
+                    </tr>
+            </thead>
+
+            <tbody class="student-details"></tbody>
+
+
+        </table>
+
+    </section>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
